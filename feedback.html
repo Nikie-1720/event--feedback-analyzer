@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND DECOR -->
+<div class="bg">
+  <span>🎤</span>
+  <span>🚀</span>
+  <span>💡</span>
+  <span>📈</span>
+</div>
+
+<div class="stage">
+  <div class="card">
+
+    <h1>Event Feedback</h1>
+    <p class="subtitle">Your experience powers our next event</p>
+
+    <form id="feedbackForm">
+
+      <div class="field">
+        <input type="text" id="name" required />
+        <label>Name</label>
+      </div>
+
+      <div class="field">
+        <input type="email" id="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="rating">
+        <span data-rate="1">😞</span>
+        <span data-rate="2">😐</span>
+        <span data-rate="3">🙂</span>
+        <span data-rate="4">😄</span>
+        <span data-rate="5">🔥</span>
+      </div>
+
+      <textarea id="feedback" placeholder="Write your feedback..." required></textarea>
+
+      <button type="submit">Submit 🚀</button>
+    </form>
+
+    <div id="loader" class="hidden">Sending...</div>
+
+    <div id="success" class="hidden">
+      <h2>Thank You 🎉</h2>
+      <p>We value your feedback</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
